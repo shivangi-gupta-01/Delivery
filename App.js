@@ -4,8 +4,8 @@ import { WelcomeScreen } from './src/screens/LoginSignupScreens/WelcomeScreen';
 import {LoginScreen} from './src/screens/LoginSignupScreens/LoginScreen';
 export default function App() {
   return (
-    // <WelcomeScreen/>
-    <LoginScreen/>  
+    <WelcomeScreen/>
+    // <LoginScreen/>  
   );
 }
 

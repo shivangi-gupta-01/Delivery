@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { View, Text, StyleSheet, TextInput, Touchable, TouchableOpacity } from 'react-native'
-import { colors, titles, btn1 } from '../../globals/style'
+import { colors, titles, btn1, hr80 } from '../../globals/style'
 import { AntDesign } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
@@ -53,6 +53,10 @@ export const LoginScreen = () => {
 
                 </TouchableOpacity>
             </View>
+            <View style={hr80}/>
+            <Text>Don't have an account? 
+                <Text style={styles.signup}> Sign Up</Text>
+            </Text>
         </View>
     )
 }
@@ -102,6 +106,22 @@ const styles = StyleSheet.create({
         marginVertical: 10,
         fontWeight: 'bold',
     },
+    gf: {
+        flexDirection: 'row',
+    },
+    gficons: {
+        backgroundColor:'white',
+        width: 50,
+        margin:10,
+        borderRadius:10,
+        padding:10,
+        alignItems :'center',
+        elevation :20,
+        padding: 10,
+    },
+    signup:{
+        color :colors.text1,
+    }
 
 })
 export default LoginScreen
