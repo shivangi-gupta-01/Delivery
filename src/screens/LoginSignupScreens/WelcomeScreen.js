@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleSheet, Text, View, Image, ImageBackground, TouchableOpacity } from 'react-native'
 import logo1 from "../../../assets/logo1.png"
 import { colors, hr80 } from "../../globals/style"
-export const WelcomeScreen = () => {
+export const WelcomeScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Welcome to Foodie</Text>
@@ -13,8 +13,11 @@ export const WelcomeScreen = () => {
       <Text style={styles.text}>Find the best food around you at lowest prices</Text>
       <View style={hr80} />
       <View style={styles.btnout}>
+        <TouchableOpacity onPress={()=> navigation.navigate('signup')}>
+          <Text style={styles.btn}>Sign Up</Text>
+        </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('login')}>
-          <Text style={styles.btn}>Get Started</Text>
+          <Text style={styles.btn}>Log In</Text>
         </TouchableOpacity>
       </View>
 
@@ -57,7 +60,19 @@ const styles = StyleSheet.create({
   },
   btnout :{
     flexDirection :'row',
-  }
+  },
+  btn: {
+    fontSize: 20,
+    color: "black",
+    textAlign: "center",
+    marginVertical: 30,
+    marginHorizontal: 10,
+    fontWeight: "200",
+    backgroundColor: "rgb(233, 161, 26)",
+    borderRadius: 10,
+    padding: 10,
+    paddingHorizontal: 20,
+  },
 
 })
 export default WelcomeScreen
