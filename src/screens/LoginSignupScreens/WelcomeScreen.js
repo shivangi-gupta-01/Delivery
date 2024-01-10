@@ -2,7 +2,9 @@ import React from 'react'
 import { StyleSheet, Text, View, Image, ImageBackground, TouchableOpacity } from 'react-native'
 import logo1 from "../../../assets/logo1.png"
 import { colors, hr80 } from "../../globals/style"
+// import { useNavigation } from '@react-navigation/native'
 export const WelcomeScreen = ({navigation}) => {
+  
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Welcome to Foodie</Text>
@@ -63,12 +65,12 @@ const styles = StyleSheet.create({
   },
   btn: {
     fontSize: 20,
-    color: "black",
+    color: colors.text1,
     textAlign: "center",
     marginVertical: 30,
     marginHorizontal: 10,
-    fontWeight: "200",
-    backgroundColor: "rgb(233, 161, 26)",
+    fontWeight: 'bold',
+    backgroundColor: "white",
     borderRadius: 10,
     padding: 10,
     paddingHorizontal: 20,

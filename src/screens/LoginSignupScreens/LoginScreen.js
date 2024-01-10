@@ -5,7 +5,7 @@ import { AntDesign } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 import { Octicons } from '@expo/vector-icons';
-export const LoginScreen = () => {
+export const LoginScreen = ({navigation}) => {
     const [emailFocus, setEmailFocus] = useState(false)
     const [passwordFocus, setPasswordFocus] = useState(false)
     const [showPassword, setShowPassword] = useState(false)
@@ -55,7 +55,7 @@ export const LoginScreen = () => {
             </View>
             <View style={hr80}/>
             <Text>Don't have an account? 
-                <Text style={styles.signup}> Sign Up</Text>
+                <Text style={styles.signup} onPress={()=> navigation.navigate('signup')}> Sign Up</Text>
             </Text>
         </View>
     )

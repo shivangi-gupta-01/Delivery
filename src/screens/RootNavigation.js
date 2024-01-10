@@ -1,10 +1,11 @@
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
 import {AuthNavigation }from './LoginSignupScreens/AuthNavigation'
-const RootNavigation = () => {
+export const RootNavigation = () => {
   return (
     <NavigationContainer>
         <AuthNavigation />
+        {/* <Text>root</Text> */}
     </NavigationContainer>
   )
 }
