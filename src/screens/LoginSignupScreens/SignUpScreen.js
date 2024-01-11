@@ -154,7 +154,7 @@ const styles = StyleSheet.create({
   },
   gftext: {
     color: colors.text2,
-    marginVertical: 10,
+    marginBottom: 10,
     fontSize: 25,
   },
   or: {
@@ -168,7 +168,7 @@ const styles = StyleSheet.create({
   gficons: {
     backgroundColor: 'white',
     width: 50,
-    margin: 10,
+    marginHorizontal: 10,
     borderRadius: 10,
     padding: 10,
     alignItems: 'center',
