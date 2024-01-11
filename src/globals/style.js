@@ -3,6 +3,7 @@ module.exports={
         col1: 'white',
         text1: 'red',
         text2:'grey',
+        text3: 'black',
     },
     titles :{
         title1:30,
