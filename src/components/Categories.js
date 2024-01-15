@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, ScrollView  } from 'react-native'
 import React from 'react'
 import style, { colors } from '../globals/style'
-import { FontAwesome5 } from '@expo/vector-icons'
+import { FontAwesome5, MaterialIcons } from '@expo/vector-icons'
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 const Categories = () => {
   return (
@@ -9,33 +9,23 @@ const Categories = () => {
       <Text style={styles.head}>Categories</Text>
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         <View style={styles.box}>
-        <FontAwesome5 name="hamburger" size={24} color="black" style={styles.myicon} />
-        <Text style={styles.text}>Burger</Text>
+        <MaterialCommunityIcons name="food-apple-outline" size={24} color="black" style={styles.myicon} />
+        <Text style={styles.text}>Starters</Text>
         </View>
 
         <View style={styles.box}>
-        <FontAwesome5 name="pizza-slice" size={24} color="black" style={styles.myicon} />
-        <Text style={styles.text}>Pizza</Text>
+        <MaterialIcons name="dinner-dining" size={24} color="black" style={styles.myicon} />
+        <Text style={styles.text}>Dinner</Text>
         </View>
 
         <View style={styles.box}>
         <MaterialCommunityIcons name="noodles" size={24} color="black" style={styles.myicon} />
-        <Text style={styles.text}>Noodles</Text>
+        <Text style={styles.text}>Breakfast</Text>
         </View>
 
         <View style={styles.box}>
-        <FontAwesome5 name="hamburger" size={24} color="black" style={styles.myicon} />
-        <Text style={styles.text}>Burger</Text>
-        </View>
-
-        <View style={styles.box}>
-        <FontAwesome5 name="pizza-slice" size={24} color="black" style={styles.myicon} />
-        <Text style={styles.text}>Pizza</Text>
-        </View>
-
-        <View style={styles.box}>
-        <FontAwesome5 name="hamburger" size={24} color="black" style={styles.myicon} />
-        <Text style={styles.text}>Burger</Text>
+        <MaterialCommunityIcons name="cupcake" size={24} color="black" style={styles.myicon} />
+        <Text style={styles.text}>Deserts</Text>
         </View>
       </ScrollView>
       
@@ -48,7 +38,7 @@ export default Categories
 const styles = StyleSheet.create({
     container:{
       backgroundColor:colors.col1,
-      width:'90%',
+      width:'100%',
       elevation: 10,
       borderRadius:10,
     },
