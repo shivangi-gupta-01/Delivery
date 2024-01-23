@@ -13,5 +13,8 @@ const FirebaseConfig = {
 if (!firebase.apps.length) {
   firebase.initializeApp(FirebaseConfig)
 }
+// const db = initializeFirestore(app, {
+//   experimentalForceLongPolling: true
+// })
 
 export { firebase };

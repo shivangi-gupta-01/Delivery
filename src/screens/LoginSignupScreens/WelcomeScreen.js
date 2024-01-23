@@ -1,10 +1,30 @@
-import React from 'react'
+import React,{useEffect, useState} from 'react'
 import { StyleSheet, Text, View, Image, ImageBackground, TouchableOpacity } from 'react-native'
 import logo1 from "../../../assets/logo1.png"
 import { colors, hr80 } from "../../globals/style"
+import {firebase} from '../../../Firebase/FirebaseConfig';
 // import { useNavigation } from '@react-navigation/native'
 export const WelcomeScreen = ({navigation}) => {
-  
+//   const [userlog, setUserLog]= useState(null)
+
+//   useEffect(()=>{
+//     const chkLogin=()=>{
+//       firebase.auth().onAuthStateChanged((user)=>{
+//         if(user){
+//           // console.log(user)
+//           setUserLog(user)
+//         }
+//         else{
+//           setUserLog(null)
+//           console.log('No User Logged In')
+//         }
+//       })
+//     }
+//     chkLogin()
+//   },[])
+
+// console.log(userlog);
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Welcome to Foodie</Text>

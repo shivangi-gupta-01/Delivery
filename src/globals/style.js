@@ -18,6 +18,7 @@ module.exports={
         justifyContent: 'center',
         elevation :10,
         color: 'white',
+        marginBottom: 10,
     },
     hr80:{
         width: '80%',
