@@ -9,7 +9,7 @@ import { firebase } from '../../Firebase/FirebaseConfig'
 import CardSlider from '../components/CardSlider'
 
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
 
   const [foodData, setFoodData] = useState([])
   const [VegData, setVegData] = useState([])
@@ -38,7 +38,7 @@ const HomeScreen = () => {
     <ScrollView style={styles.container}>
       {/* <View> */}
       <StatusBar />
-      <HomeHeadNav />
+      <HomeHeadNav navigation={navigation}/>
       <View style={styles.searchbox}>
         <AntDesign name='search1' size={24} color="black" style={styles.searchicon} />
         <TextInput style={styles.input} placeholder='search'

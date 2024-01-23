@@ -12,6 +12,7 @@ const FirebaseConfig = {
 };
 if (!firebase.apps.length) {
   firebase.initializeApp(FirebaseConfig)
+  // experimentalForceLongPolling: true
 }
 // const db = initializeFirestore(app, {
 //   experimentalForceLongPolling: true

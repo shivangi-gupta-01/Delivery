@@ -5,8 +5,8 @@ import {LoginScreen} from './src/screens/LoginSignupScreens/LoginScreen';
 import {SignUpScreen} from './src/screens/LoginSignupScreens/SignUpScreen'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
-import {HomeScreen} from './src/screens/HomeScreen';
-import {UserProfile} from './src/screens/UserProfile';
+import HomeScreen from './src/screens/HomeScreen';
+import UserProfile from './src/screens/UserProfile';
 // import {RootNavigation} from './src/screens/RootNavigation';
 export default function App() {
   console.log("app rendering")
